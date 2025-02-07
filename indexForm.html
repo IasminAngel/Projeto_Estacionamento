@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estacionamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 300px;
+            margin: 60px auto;
+            padding: 60px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input, select, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+        .veiculos-lista {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sistema de Estacionamento</h2>
+        <form id="formCadastro">
+            <label for="cor">Cor do Veículo:</label>
+            <input type="text" id="cor" name="cor" required>
+
+            <label for="modelo">Modelo do Veículo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+
+            <label for="placa">Placa do Veículo:</label>
+            <input type="text" id="placa" name="placa" required>
+
+            <label for="acao">Ação:</label>
+            <select id="acao">
+                <option value="cadastrar">Cadastrar</option>
+                <option value="alterar">Alterar</option>
+                <option value="excluir">Excluir</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="veiculos-lista">
+            <h3>Veículos Cadastrados:</h3>
+            <ul id="listaVeiculos"></ul>
+        </div>
+    </div>
+
+    <script src="sistema.js"></script>
+</body>
+</html>
