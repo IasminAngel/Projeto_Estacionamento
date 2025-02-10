@@ -6,7 +6,7 @@ CREATE TABLE usuarios (
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL,
-    tipo ENUM('admin', 'funcionario') NOT NULL
+    -- APENAS USO DE FUNCIONARIOS
 );
 
 CREATE TABLE clientes (

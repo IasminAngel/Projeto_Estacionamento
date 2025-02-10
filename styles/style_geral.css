@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.form-container, .login_screen{
+    width: 300px;
+    margin: 60px auto;
+    padding: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input, select, button {
+    width: 100%;
+    margin: 15px 0;
+    padding: 8px;
+}
+
+.entry{
+    height: 30px;
+    cursor: pointer;
+}

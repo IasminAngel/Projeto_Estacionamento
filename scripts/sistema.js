@@ -27,7 +27,7 @@ document.getElementById("formCadastro").addEventListener("submit", function(even
         veiculos.push({ cor, modelo, placa });
     } else if (acao === "alterar") {
         // Alteração de veículo
-        const placaAlterar = prompt("Digite a placa do veículo que deseja alterar:");
+        const placaAlterar = prompt("Confirme a placa do veículo que deseja alterar:");
         const veiculoParaAlterar = veiculos.find(veiculo => veiculo.placa === placaAlterar);
 
         if (veiculoParaAlterar) {
@@ -39,7 +39,7 @@ document.getElementById("formCadastro").addEventListener("submit", function(even
         }
     } else if (acao === "excluir") {
         // Exclusão de veículo
-        const placaExcluir = prompt("Digite a placa do veículo que deseja excluir:");
+        const placaExcluir = prompt("Confirme a placa do veículo que deseja excluir:");
         veiculos = veiculos.filter(veiculo => veiculo.placa !== placaExcluir);
     }
 
