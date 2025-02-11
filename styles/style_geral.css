@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
 }
-.form-container, .login_screen{
+.form-container, .tela_login{
     width: 300px;
     margin: 60px auto;
     padding: 60px;
@@ -14,7 +14,7 @@ input, select, button {
     padding: 8px;
 }
 
-.entry{
+.entrar{
     height: 30px;
     cursor: pointer;
 }
