@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/estacionamento_style.css">
+    <title>Controle de Vagas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div class="legenda">
+        <div class="legenda-item">
+          <div class="circulo disponivel"></div>
+          <span>Disponível</span>
+        </div>
+        <div class="legenda-item">
+          <div class="circulo reservada"></div>
+          <span>Reservada</span>
+        </div>
+        <div class="legenda-item">
+          <div class="circulo ocupada"></div>
+          <span>Ocupada</span>
+        </div>
+      </div>
+    </div>
+    <div id="dialogo"></div>
+    <div id="overlay" onclick="fecharDialogo()"></div>
+  </body>
+  <script src="/scripts/sistemaEstacionamento.js"></script>
+</html>
