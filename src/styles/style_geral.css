@@ -1,10 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-}
 .form-container, .tela_login{
-    width: 300px;
-    margin: 60px auto;
-    padding: 60px;
+    align-content: center;
+    align-items: center;
+    width: 600px;
+    margin: 20px auto;
+    padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
