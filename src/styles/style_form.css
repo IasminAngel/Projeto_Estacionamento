@@ -1,24 +1,25 @@
-.form-container, .tela_login{
-    align-content: center;
-    align-items: center;
-    width: 600px;
-    margin: 20px auto;
-    padding: 50px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.form-container {
+    width: 500px;  
+    background-color: #cac9c9;
+    padding: 10px;  
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    margin: 10px auto;  
 }
 
-input, select, button {
-    width: 100%;
-    margin: 15px 0;
-    padding: 8px;
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;  
 }
 
-.entrar{
-    height: 30px;
-    cursor: pointer;
-}
-
-.veiculos-lista {
-    margin-top: 20px;
+input,
+select,
+button {
+    width: 70%;  
+    margin: 5px 0; 
+    padding: 6px; 
+    border: 1px solid #585858;
+    border-radius: 4px;
+    font-size: 14px;
 }

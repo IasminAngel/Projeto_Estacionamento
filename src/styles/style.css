@@ -10,7 +10,12 @@
 body {
     display: flex;
     min-height: 100vh;
-    background-color: #e3e9f7;
+    background-color: #b3b3b3;
+    background-image: url("/src/img/carros.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -24,7 +29,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: #e6e6e6;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
     position: relative;
@@ -75,7 +80,7 @@ main {
 }
 
 .side-item.active {
-    background-color: #4f46e5;
+    background-color: #303033b0;
 }
 
 .side-item:hover:not(.active),
@@ -125,7 +130,7 @@ main {
     position: absolute;
     top: 30px;
     right: -10px;
-    background-color: #4f46e5;
+    background-color: #303033b0;
     color: #e3e9f7;
     border-radius: 100%;
     width: 20px;
