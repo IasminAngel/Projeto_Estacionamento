@@ -1,3 +1,24 @@
+.form-container, .tela_login{
+    align-content: center;
+    align-items: center;
+    width: 600px;
+    margin: 20px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    margin: 15px 0;
+    padding: 8px;
+}
+
+.entrar{
+    height: 30px;
+    cursor: pointer;
+}
+
 .veiculos-lista {
     margin-top: 20px;
 }
