@@ -1,10 +1,16 @@
 .form-container {
-    width: 500px;  
+    width: 550px;  
     background-color: #cac9c9;
     padding: 10px;  
     border-radius: 8px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
     margin: 10px auto;  
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    margin: 10px auto;
 }
 
 label {
@@ -19,7 +25,19 @@ button {
     width: 70%;  
     margin: 5px 0; 
     padding: 6px; 
-    border: 1px solid #585858;
+    border: 3px solid #f3f0f0;
     border-radius: 4px;
     font-size: 14px;
+}
+
+main {
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 82px);
+    height: 90%;
 }

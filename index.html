@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Wallpark</title>
-    <!-- Estacionamento Wallpark mudado para Login Wallpark -->
-    <link rel="stylesheet" href="/src/styles/style_geral.css">
+    <link rel="stylesheet" href="/src/styles/style_login.css">
 </head>
 <body>
-    <div class="object">
-        <div class="tela_login">
-            <h1>Login Wallpark</h1>
-            <label class="labels">E-mail:</label>
-            <input class="input" type="text">
-            <label class="labels">Senha:</label>
-            <input class="input" type="password">
-            <a href="#">Esqueci minha senha / registrar-se</a> <!-- Não sei se é necessário, mas melhor deixar aplicado por enquanto -->
-            <a href="/indexForm.html"><button class="entrar">Entrar</button></a>
-            
-     
-        </div>
-
+    <div class="tela_login">
+        <h1>Login Wallpark</h1>
+        <label class="labels" for="email">E-mail:</label>
+        <input class="input" type="text" id="email" placeholder="Digite seu e-mail">
+        
+        <label class="labels" for="senha">Senha:</label>
+        <input class="input" type="password" id="senha" placeholder="Digite sua senha">
+        
+        <a href="#">Esqueci minha senha</a>
+        <a href="#">Registrar-se</a>
+        
+        <a href="/indexForm.html">
+            <button class="entrar">Entrar</button>
+        </a>
     </div>
 </body>
 </html>
