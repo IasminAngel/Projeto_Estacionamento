@@ -27,16 +27,16 @@ document.getElementsByClassName("entrar")[0].addEventListener("click", function 
 
 
     function passwordAccount() {
-        const maxPassword = 8;
+        const minPassword = 8;
         const size = passwordField.value.length;
 
         if (passwordField.value === "") {
             errorMessage += "Por favor, preencha sua senha.<br>";
             passwordField.style.border = "1px solid red";
-        } else if (size > maxPassword) {
-            errorMessage += `A senha deve ter no máximo ${maxPassword} caracteres!<br>`;
+        } else if (size < minPassword) {
+            errorMessage += `A senha deve ter no mínimo ${minPassword} caracteres!<br>`;
             passwordField.style.border = "1px solid red";
-            passwordField.value = passwordField.value.slice(0, maxPassword);
+            passwordField.value = passwordField.value.slice(0, minPassword);
         } else {
             passwordField.style.border = "";
         }

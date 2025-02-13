@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    min-height: 100vh;
+    background-color: #b3b3b3;
+    background-image: url("/src/img/carros.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div_mae{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+
+}
+
+.div_mae .fundo_pagamento{
+    background-color: #6e6e6e;
+    width: 550px;
+}
+
+.div_mae .fundo_pagamento .texto{
+    padding: 20px;
+
+}
+
+.div_mae .fundo_pagamento .texto .titulo{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.div_mae .fundo_pagamento .texto .subtitulo{
+    font-size: 12px;
+
+}
+
+.div_mae .fundo_pagamento .seletor{
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.div_mae .fundo_pagamento .seletor .opcoes{
+    font-size: 14px;
+}
+
+.div_mae .fundo_pagamento .formulario{
+    display: flex;
+    height: 80%;
+    align-items: center;
+    
+}
+
+.div_mae .fundo_pagamento .formulario .texto{
+    font-size: 18px;
+}
+
+.div_mae .fundo_pagamento .formulario .caixa_de_marcar{
+    display: flex;
+    
+}

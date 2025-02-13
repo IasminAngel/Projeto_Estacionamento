@@ -4,27 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de pagamemto</title>
+
+    
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/style_pagamento.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+
 </head>
 <body>
 
-    <h1>Selecione uma forma de pagamento</h1>
-    <h3>Caso deseje assinar uma forma mensal, selecione a opção "Assinar mensalmente"</h3>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <p id="user_infos">
+                    <span class="item-description">Fulano de Tal</span>
+                    <span class="item-description">Jojo Todynho</span>
+                </p>
+            </div>
 
-    <form action="">
+            <ul id="side_items">
+                <li class="side-item active">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span class="item-description">Gereciamento Estacionamento</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="/index.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">Login</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="/indexEstacionamento.html">
+                        <i class="fa-solid fa-car"></i>
+                        <span class="item-description">Estacionamento</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href= "/IndexPagamento.html">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span class="item-description">Forma de pagamento</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">Logout</span>
+            </button>
+        </div>
+    </nav>
+
+<!-- ----------------------------------------fim da sidebar------------------------------------------ -->
+
+    <div class="div_mae">
+
+        <div class="fundo_pagamento">
+
+            <div class="texto">
+
+                <span class="titulo">Selecione uma forma de pagamento</span> <br>
+                <span class="subtitulo">Caso deseje assinar uma forma mensal, selecione a opção "Assinar mensalmente"</span>
+            </div>
         
-        <select name="" id="">
+            <div class="formulario">
+                
+                <form action="">
+                    
+                <select class="seletor" name="" id="">
+                    
+                    <option class="opcoes" value="">Cartão de crédito</option>
+                    <option class="opcoes" value="">Cartão de débito</option>
+                    <option class="opcoes" value="">PIX</option>
+                    
+        
+                </select>
+        
+                <div class="caixa_de_marcar">
+                    <input class="assinatura_mensal" type="checkbox" name="" id=""> <p class="texto">Assinar mensalmente</p> 
+                    
+                </div>
+            </form>
 
-            <option value="">Cartão de crédito</option>
-            <option value="">Cartão de débito</option>
-            <option value="">PIX</option>
-            
+                <!-- fim da div que fecha o formulario -->
+            </div>
+    
+            <!-- fim da div que centraliza o conteudo principal -->
+    </div>
 
-        </select>
+    <!-- fim da div invisivel que está no fundo da tela -->
+</div>
 
-
-        <input type="checkbox" name="" id="">Assinar mensalmente
-    </form>
-
-
+    <script src="src/scripts/script.js"></script>
+    <script src="src/scripts/script_form.js"></script>
 </body>
 </html>
