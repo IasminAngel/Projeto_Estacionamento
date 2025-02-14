@@ -5,9 +5,8 @@ function abrirDialogo(numero, botao) {
   overlay.style.display = "block";
   dialogo.innerHTML = `
                         <p>O que você deseja fazer com a vaga ${numero}?</p>
-                        <button class="opcao" onclick="reservar()">Reservar vaga</button>
-                        <button class="opcao" onclick="estacionar(${numero}, botao)">Estacionar a vulso R$:2 ---> Por cada hora</button>
-                        <button class="opcao" onclick="assinar(${numero}, botao)">Assinatura mensal ---> R$:600</button>
+                        <button class="opcao" onclick="reservar(${numero}, this)">Reservar vaga</button>
+                        <button class="opcao" onclick="estacionar(${numero}, this)">Estacionar a vulso R$:2 ---> Por cada hora</button>
                         <button class="opcao" onclick="fecharDialogo()">Cancelar</button>
                     `;
 }
@@ -26,12 +25,16 @@ function reservar(numero, botao) {
   overlay.style.display = "block";
 
   dialogo.innerHTML = `
-          <button class="opcao" onclick="reservar(${numero}, botao)"> (1°) Pacote R$:12 ---> 8 horas</button>
-          <button class="opcao" onclick="reservar(${numero}, botao)"> (2°) Pacote R$:20 ---> 16 horas </button>
-          <button class="opcao" onclick="reservar(${numero}, botao)"> (3°) Pacote R$:27 ---> 24 Horas </button>
-
+          <p>Qual pacote você deseja adquirir?</p>
+          <a href="../../IndexPagamento.html"><button class="opcao">(1°) Pacote R$:12 ---> 8 horas</button></a>
+          <a href="../../IndexPagamento.html"><button class="opcao">(2°) Pacote R$:20 ---> 16 horas</button></a>
+          <a href="../../IndexPagamento.html"><button class="opcao">(3°) Pacote R$:27 ---> 24 Horas</button></a>
+          <button class="opcao" onclick="fecharDialogo()">Cancelar</button>
   `;
+}
 
+function escolherPacote(numero, preco, horas) {
+  alert(`Você escolheu o pacote de R$${preco} para ${horas} horas na vaga ${numero}.`);
   fecharDialogo();
 }
 

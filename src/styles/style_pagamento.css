@@ -51,9 +51,15 @@ body {
 .div_mae .fundo_pagamento .formulario{
     display: flex;
     height: 80%;
+    width: 100%;
     align-items: center;
     
 }
+
+.div_mae .fundo_pagamento .formulario .form{
+    width: 100%;
+}
+
 
 .div_mae .fundo_pagamento .formulario .texto{
     font-size: 18px;
@@ -62,4 +68,20 @@ body {
 .div_mae .fundo_pagamento .formulario .caixa_de_marcar{
     display: flex;
     
+}
+
+.div_mae .fundo_pagamento .formulario .div_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.div_mae .fundo_pagamento .formulario .div_btn .enviar{
+    
+    width: 150px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 15px;
 }

@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -42,12 +42,7 @@
                         <span class="item-description">Estacionamento</span>
                     </a>
                 </li>
-                <li class="side-item">
-                    <a href= "/IndexPagamento.html">
-                        <i class="fa-regular fa-credit-card"></i>
-                        <span class="item-description">Forma de pagamento</span>
-                    </a>
-                </li>
+                
             </ul>
 
             <button id="open_btn">
@@ -63,7 +58,7 @@
         </div>
     </nav>
 
-----------------------------------------fim da sidebar------------------------------------------
+
 
     <div class="div_mae">
         
@@ -77,34 +72,49 @@
             
             <div class="formulario">
                 
-                <form action="">
+                <form class="form" action="">
                     
                     <select class="seletor" name="" id="">
                         
                         <option class="opcoes" value="">Cartão de crédito</option>
                         <option class="opcoes" value="">Cartão de débito</option>
                         <option class="opcoes" value="">PIX</option>
+                        <option class="opcoes" value="">Dinheiro</option>
                         
                         
                     </select>
                     
                     <div class="caixa_de_marcar">
                         <input class="assinatura_mensal" type="checkbox" name="" id=""> <p class="texto">Assinar mensalmente</p> 
-                        
                     </div>
+                    
+                    <div class="div_btn">
+                        <button id="Confirmar" class="enviar">Confirmar</button>    
+
+                    </div>
+                    
+                    <div id="overlay">
+                        <div id="conteudo">
+                            
+
+                        </div>
+
+                    </div>
+                    
                 </form>
                 
-                fim da div que fecha o formulario
+                <!-- fim da div que fecha o formulario -->
             </div>
             
-            fim da div que centraliza o conteudo principal
+            <!-- fim da div que centraliza o conteudo principal -->
         </div>
         
-        fim da div invisivel que está no fundo da tela
+        <!-- fim da div invisivel que está no fundo da tela -->
     </div>
     
 
     <script src="src/scripts/script.js"></script>
     <script src="src/scripts/script_form.js"></script>
+    <script src="src/scripts/script_pagamento.js"></script>
 </body>
-</html> -->
+</html> 
