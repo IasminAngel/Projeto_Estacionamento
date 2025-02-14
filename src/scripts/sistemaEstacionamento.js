@@ -43,9 +43,6 @@ function estacionar(numero, botao) {
   fecharDialogo();
 }
 
-
-
-// Função para criar os 30 botões divididos em 5 blocos de 6
 function criarRetangulos() {
   const container = document.body.querySelector(".container > div");
   for (let bloco = 1; bloco <= 5; bloco++) {
@@ -57,7 +54,7 @@ function criarRetangulos() {
       retanguloContainer.classList.add("retangulo-container");
       const num = document.createElement("div");
       num.classList.add("numero");
-      num.textContent = numero; // Número acima do retângulo
+      num.textContent = numero; 
       const botao = document.createElement("button");
       botao.classList.add("retangulo");
       botao.addEventListener("click", () => {
@@ -75,6 +72,6 @@ function criarRetangulos() {
   }
 }
 
-// Chamada da função para criar os retângulos ao carregar a página
+
 window.onload = criarRetangulos;
 
