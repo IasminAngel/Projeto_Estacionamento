@@ -29,26 +29,21 @@ function reservar(numero, botao) {
           <a href="../../IndexPagamento.html"><button class="opcao">(1°) Pacote R$:12 ---> 8 horas</button></a>
           <a href="../../IndexPagamento.html"><button class="opcao">(2°) Pacote R$:20 ---> 16 horas</button></a>
           <a href="../../IndexPagamento.html"><button class="opcao">(3°) Pacote R$:27 ---> 24 Horas</button></a>
+          <button class="opcao" onclick="abrirDialogo(${numero}, this)">Voltar</button>
           <button class="opcao" onclick="fecharDialogo()">Cancelar</button>
   `;
 }
 
-function escolherPacote(numero, preco, horas) {
-  alert(`Você escolheu o pacote de R$${preco} para ${horas} horas na vaga ${numero}.`);
-  fecharDialogo();
-}
 
 function estacionar(numero, botao) {
   botao.className = "retangulo ocupada";
   const horas = prompt("Por quantas horas você deseja estacionar?");
   alert("Você estacionou a vaga " + numero + " por " + horas + " horas");
+  
   fecharDialogo();
 }
 
-function assinar(numero, botao) {
-  alert("Você fez uma assinatura mensal para a vaga " + numero);
-  fecharDialogo();
-}
+
 
 // Função para criar os 30 botões divididos em 5 blocos de 6
 function criarRetangulos() {
@@ -82,3 +77,4 @@ function criarRetangulos() {
 
 // Chamada da função para criar os retângulos ao carregar a página
 window.onload = criarRetangulos;
+

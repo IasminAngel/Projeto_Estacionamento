@@ -104,6 +104,10 @@ body {
     font-weight: 800;
 }
 
+.imprimir , .fechar{
+    border-radius: 15px;
+}
+
 .imprimir:hover{
     background-color: green;
     transition: 0.6s;
