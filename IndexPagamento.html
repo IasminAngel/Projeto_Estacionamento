@@ -74,12 +74,13 @@
                 
                 <form class="form" action="">
                     
-                    <select class="seletor" name="" id="">
+                    <select class="seletor" name="" id="forma_pagamento">
                         
-                        <option class="opcoes" value="">Cartão de crédito</option>
-                        <option class="opcoes" value="">Cartão de débito</option>
-                        <option class="opcoes" value="">PIX</option>
-                        <option class="opcoes" value="">Dinheiro</option>
+                        <option class="opcoes" value="Cartão de credito">Cartão de crédito</option>
+                        <option class="opcoes" value="Cartão de débito">Cartão de débito</option>
+                        <option class="opcoes" value="Pix">PIX</option>
+                        <option class="opcoes" value="Boleto">Boleto</option>
+                        <option class="opcoes" value="Dinheiro">Dinheiro</option>
                         
                         
                     </select>
@@ -93,13 +94,6 @@
 
                     </div>
                     
-                    <div id="overlay">
-                        <div id="conteudo">
-                            
-
-                        </div>
-
-                    </div>
                     
                 </form>
                 
@@ -112,6 +106,33 @@
         <!-- fim da div invisivel que está no fundo da tela -->
     </div>
     
+    <div id="overlay">
+
+        <div class="conteudo" id="conteudo">
+            <p class="p_ticket">Forma de pagamento escolhida: </p><br>
+            <label id="pagamento" for=""></label>
+
+            <p class="p_ticket">Cor: </p><br>
+            <label id="cor" for=""></label>
+
+            <p class="p_ticket">Modelo:</p><br>
+            <label id="modelo" for=""></label>
+
+            <p class="p_ticket">Tamanho:</p><br>
+            <label id="tamanho" for=""></label>
+
+            <p class="p_ticket">Placa:</p><br>
+            <label id="placa" for=""></label>
+
+            <p class="p_ticket">Preço total:</p><br>
+            <label id="preco" for=""></label>
+
+            <button class="imprimir" id="imprimir">Imprimir</button>
+
+            <button class="fechar" id="fechar">Fechar</button>
+        </div>
+
+    </div>
 
     <script src="src/scripts/script.js"></script>
     <script src="src/scripts/script_form.js"></script>
